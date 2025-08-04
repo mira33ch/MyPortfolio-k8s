@@ -47,7 +47,7 @@ pipeline {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'github', usernameVariable: 'GIT_USERNAME', passwordVariable: 'GIT_PASSWORD')]) {
                     sh """
-                        git config --global user.name "mira33ch"
+                        git config --global user.name "mariem"
                         git config --global user.email "mariem.chaabane@esprit.tn"
 
                         git add mysql-deploy.yaml frontend-deploy.yaml backend-deploy.yaml
