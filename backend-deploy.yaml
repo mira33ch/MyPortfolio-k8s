@@ -16,7 +16,7 @@ spec:
         - name: backend
           image: mariem360/portfolio-app-cicd-pipeline-backend:1.0.0-7
           ports:
-            - containerPort: 8089
+            - containerPort: 8080
           env:
             - name: SPRING_DATASOURCE_URL
               value: jdbc:mysql://mysql:3306/database
@@ -33,6 +33,6 @@ spec:
   selector:
     app: backend
   ports:
-    - port: 8089
-      targetPort: 8089
+    - port: 8080
+      targetPort: 8080
   type: ClusterIP
